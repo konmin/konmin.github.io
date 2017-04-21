@@ -9,7 +9,7 @@ gulp.task('sass', function () {
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('./dest/css'));
+        .pipe(gulp.dest('./build/css'));
 });
 
 gulp.task('sass:watch', function () {
